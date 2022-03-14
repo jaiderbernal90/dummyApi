@@ -1,0 +1,27 @@
+<div class="grid__user">
+    <div class="grid__user-image">
+        <div class="grid__user-image--absolute">
+            <ng-container *ngIf="image">
+                <img src="/assets/img/{{ image }}" alt="" class="grid__user-image--img">
+            </ng-container>
+        </div>
+    </div>
+    <div class="grid__user-info">
+        <div class="grid__user-group">
+            <small>Full Name</small>
+            <span>{{ user?.employee_name}}</span>
+        </div>
+        <div class="grid__user-group">
+            <small>Salary</small>
+            <span>{{ user?.employee_salary | currency }}</span>
+        </div>
+        <div class="grid__user-group">
+            <small>Age</small>
+            <span>{{ user?.employee_age }}</span>
+        </div>
+    </div>
+    <div class="grid__user-actions">
+        <button class="button__secondary" [routerLink]="'/users'">Back</button>
+        <button class="button__primary">Save Changes</button>
+    </div>
+</div>
