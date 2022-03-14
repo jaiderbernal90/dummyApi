@@ -1,0 +1,71 @@
+<article class="card__user">
+    <div class="card__user-head">
+        <div class="card__user-head-bar"></div>
+        <div class="card__user-info">
+            <span class="card__user-info--status">Approved</span>
+            <span class="card__user-info--date">10 / 07</span>
+        </div>
+    </div>
+    <a [routerLink]="['detalle', user.id]">
+        <div class="card__user-body">
+            <h4 class="card__user-body-role">Template GMP protcol</h4>
+            <div class="card__user-body-info">
+                <div class="card__user-body-info--imagen">
+                    <img src="/assets/img/{{image}}" alt="" class="card__user-body-info--img">
+                </div>
+                <div class="card__user-body-info-texts">
+                    <span class="card__user-body-info--text">Comment by <strong class="card__user-body-info--strong">{{ user.employee_name}}</strong></span>
+                    <p class="card__user-body-info--bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis </p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+</article>
+
+<!-- <article class="card__user">
+    <div class="card__user-head">
+        <div class="card__user-head-bar red"></div>
+        <div class="card__user-info">
+            <span class="card__user-info--status red">Declined</span>
+            <span class="card__user-info--date">09 / 07</span>
+        </div>
+    </div>
+    <a [routerLink]="['detalle','1']">
+        <div class="card__user-body">
+            <h4 class="card__user-body-role">Template GMP protcol</h4>
+            <div class="card__user-body-info">
+                <div class="card__user-body-info--imagen">
+                    <img src="/assets/img/photo-2.avif" alt="" class="card__user-body-info--img">
+                </div>
+                <div class="card__user-body-info-texts">
+                    <span class="card__user-body-info--text">Comment by <strong class="card__user-body-info--strong">Eric Bishoff</strong></span>
+                    <p class="card__user-body-info--bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis </p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+</article>
+
+<article class="card__user">
+    <div class="card__user-head">
+        <div class="card__user-head-bar yellow"></div>
+        <div class="card__user-info">
+            <span class="card__user-info--status yellow">In progress</span>
+            <span class="card__user-info--date">09 / 07</span>
+        </div>
+    </div>
+    <div class="card__user-body">
+        <h4 class="card__user-body-role">Template GMP protcol</h4>
+        <div class="card__user-body-info">
+            <div class="card__user-body-info--imagen">
+                <img src="/assets/img/photo-2.avif" alt="" class="card__user-body-info--img">
+            </div>
+            <div class="card__user-body-info-texts">
+                <span class="card__user-body-info--text">Comment by <strong class="card__user-body-info--strong">Eric Bishoff</strong></span>
+                <p class="card__user-body-info--bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis </p>
+            </div>
+        </div>
+    </div>
+</article> -->

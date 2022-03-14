@@ -1,0 +1,6 @@
+<app-header></app-header>
+<div class="content__users">
+    <ng-container *ngFor="let item of users">
+        <app-users-list [user]="item"></app-users-list>
+    </ng-container>
+</div>
